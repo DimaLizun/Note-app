@@ -63,12 +63,14 @@ export default class NotesApp extends React.Component{
                 },
             ]
         }
-
     }
+
+
+
 
      render() {
          return (
-             <div className="notes-app">
+             <div className="notes-app" >
                  <InputArea />
                  <NotesBlock notes={this.state.notes} />
              </div>

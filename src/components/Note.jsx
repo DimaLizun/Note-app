@@ -8,7 +8,7 @@ export default class Note extends React.Component{
     }
 
     render() {
-        var style  = { backgroundColor: this.props.color}
+        let style  = { backgroundColor: this.props.color}
         return (
             <div className="note" style={style}>{this.props.children}</div>
         )
