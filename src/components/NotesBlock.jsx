@@ -2,6 +2,8 @@ import React from 'react';
 import NotesApp from './NotesApp.jsx'
 import Note from './Note.jsx';
 
+import './NotesBlock.css'
+
 export default class NotesBlock extends React.Component{
     constructor(props){
         super(props);

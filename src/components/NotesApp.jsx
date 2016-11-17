@@ -3,6 +3,7 @@ import React from 'react';
 import InputArea from './InputArea.jsx'
 import NotesBlock from './NotesBlock.jsx'
 
+import './NotesApp.css'
 
 export default class NotesApp extends React.Component{
     constructor(props){
