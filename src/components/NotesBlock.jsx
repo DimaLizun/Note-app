@@ -28,11 +28,12 @@ export default class NotesBlock extends React.Component{
     }
 
     render() {
+        let onNoteDelete = this.props.onNoteDelete;
         return (
             <div className="notes-Block" ref="grid">
                 {
                     this.props.notes.map(function (note) {
-                        return <Note key={note.id}  color={note.color}>{note.text} </Note>
+                        return <Note key={note.id}  color={note.color} onDelete={onNoteDelete.bind(null,note)}>{note.text} </Note>
                     })
                 }
             </div>

@@ -10,7 +10,10 @@ export default class Note extends React.Component{
     render() {
         let style  = { backgroundColor: this.props.color}
         return (
-            <div className="note" style={style}>{this.props.children}</div>
+            <div className="note" style={style}>
+                <span className="delete-app" onClick={this.props.deleteNote}> × </span>
+                {this.props.children}
+            </div>
         )
     }
 }
