@@ -10,13 +10,21 @@ export default class NotesBlock extends React.Component{
     }
 
     componentDidMount() {
-        var grid = this.refs.grid;
+        const grid = this.refs.grid;
         this.msnry = new Masonry( grid, {
             itemSelector: '.note',
             columnWidth: 150,
             gutter: 10,
             isFitWidth: true
         });
+    }
+
+    componentDidUpdate(prevProps){
+        if(this.props.notes.length !== prevProps.notes.length){
+            this.msnry.reloadItems();
+            this.msnry.layout();
+        }
+
     }
 
     render() {

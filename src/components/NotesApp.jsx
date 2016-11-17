@@ -64,16 +64,23 @@ export default class NotesApp extends React.Component{
                 },
             ]
         }
+
+        this.addText= this.addText.bind(this);
     }
 
-
-
+    addText(newNote) {
+        var newNotes = this.state.notes.slice();
+        newNotes.unshift(newNote);
+        this.setState({ notes: newNotes });
+    }
 
      render() {
          return (
-             <div className="notes-app" >
-                 <InputArea />
-                 <NotesBlock notes={this.state.notes} />
+             <div className="main-app">
+                <div className="notes-app" >
+                   <InputArea addText={this.addText} />
+                   <NotesBlock notes={this.state.notes} />
+                </div>
              </div>
 
          )
