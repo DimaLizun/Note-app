@@ -1,0 +1,15 @@
+.note{
+    width: 200px;
+    height: auto;
+    float: left;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.notes-app{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}

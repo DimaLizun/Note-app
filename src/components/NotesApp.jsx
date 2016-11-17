@@ -16,6 +16,9 @@ export default class NotesApp extends React.Component{
                     " which is sadly very common, especially in the U.K. We're becoming desensitized. " +
                     "which is sadly very common, especially in the U.K." +
                     " We're becoming desensitizewhich is sadly very common," +
+                    " especially in the U.K. We're becoming desensitizedd" +
+                    "which is sadly very common, especially in the U.K." +
+                        " We're becoming desensitizewhich is sadly very common," +
                     " especially in the U.K. We're becoming desensitizedd",
                     color: "green"
                 },
@@ -23,10 +26,8 @@ export default class NotesApp extends React.Component{
                     id: 2,
                     text: "I don't know how much listening there is in this conversation," +
                     " which is sadly very common, especially in the U.K. We're becoming desensitized. " +
-                    "which is sadly very common, especially in the U.K." +
-                    " We're becoming desensitizewhich is sadly very common," +
-                    " especially in the U.K. We're becoming desensitizedd",
-                    color: "green"
+                    "which is sadly very common, especially in the U.K." ,
+                    color: "red"
                 },
                 {
                     id: 3,
@@ -35,16 +36,14 @@ export default class NotesApp extends React.Component{
                     "which is sadly very common, especially in the U.K." +
                     " We're becoming desensitizewhich is sadly very common," +
                     " especially in the U.K. We're becoming desensitizedd",
-                    color: "green"
+                    color: "blue"
                 },
                 {
                     id: 4,
                     text: "I don't know how much listening there is in this conversation," +
                     " which is sadly very common, especially in the U.K. We're becoming desensitized. " +
-                    "which is sadly very common, especially in the U.K." +
-                    " We're becoming desensitizewhich is sadly very common," +
                     " especially in the U.K. We're becoming desensitizedd",
-                    color: "green"
+                    color: "orange"
                 },
                 {
                     id: 5,
@@ -57,12 +56,10 @@ export default class NotesApp extends React.Component{
                 },
                 {
                     id: 6,
-                    text: "I don't know how much listening there is in this conversation," +
-                    " which is sadly very common, especially in the U.K. We're becoming desensitized. " +
-                    "which is sadly very common, especially in the U.K." +
+                    text:
                     " We're becoming desensitizewhich is sadly very common," +
                     " especially in the U.K. We're becoming desensitizedd",
-                    color: "green"
+                    color: "red"
                 },
             ]
         }
@@ -71,10 +68,9 @@ export default class NotesApp extends React.Component{
 
      render() {
          return (
-             <div>
+             <div className="notes-app">
                  <InputArea />
                  <NotesBlock notes={this.state.notes} />
-                 <div>NotesApp</div>
              </div>
 
          )
