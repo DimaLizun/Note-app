@@ -11,7 +11,7 @@ export default class Note extends React.Component{
         let style  = { backgroundColor: this.props.color}
         return (
             <div className="note" style={style}>
-                <span className="delete-app" onClick={this.props.deleteNote}> × </span>
+                <span className="delete-note" onClick={this.props.onDelete}> × </span>
                 {this.props.children}
             </div>
         )

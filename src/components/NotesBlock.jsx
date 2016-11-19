@@ -1,7 +1,5 @@
 import React from 'react';
-import NotesApp from './NotesApp.jsx'
 import Note from './Note.jsx';
-
 import './NotesBlock.css'
 
 export default class NotesBlock extends React.Component{
@@ -33,7 +31,10 @@ export default class NotesBlock extends React.Component{
             <div className="notes-Block" ref="grid">
                 {
                     this.props.notes.map(function (note) {
-                        return <Note key={note.id}  color={note.color} onDelete={onNoteDelete.bind(null,note)}>{note.text} </Note>
+                        return <Note key={note.id}
+                                     color={note.color}
+                                     onDelete={onNoteDelete.bind(null, note)}
+                        >{note.text} </Note>
                     })
                 }
             </div>

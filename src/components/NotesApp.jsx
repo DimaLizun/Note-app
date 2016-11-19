@@ -88,6 +88,7 @@ export default class NotesApp extends React.Component{
         this.setState({ notes: newNotes });
     }
 
+    /*
     handleDeleteNote(e){
         let id = e.id;
         let newNotes = this.state.notes.filter(function (note) {
@@ -95,6 +96,16 @@ export default class NotesApp extends React.Component{
         });
 
         this.setState({notes: newNotes})
+    }
+    */
+
+
+    handleDeleteNote(note) {
+        let noteId = note.id;
+        let newNotes = this.state.notes.filter(function(note) {
+            return note.id !== noteId;
+        });
+        this.setState({ notes: newNotes });
     }
 
      render() {
