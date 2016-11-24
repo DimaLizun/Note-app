@@ -20,18 +20,24 @@
     font-size: 20px;
     font-family: Tahoma, sans-serif;
 
+    position: relative;
+    z-index: 2;
+
 }
 
 .add-button{
     align-self: flex-end;
     width: 100px;
+    padding:8px 8px;
+    margin: -40px -5px;
+
     background-color: coral;
     border-radius:28px;
+    border: none;
     color:#ffffff;
     font-size:14px;
-    padding:8px 8px;
-    margin-top: 20px;
-    border: none;
+
+    z-index: 3;
 }
 
 .add-button:hover {
